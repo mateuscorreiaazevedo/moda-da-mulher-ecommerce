@@ -2,12 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 
-// Configs
-@import "varstyle.scss";
-@import "config.scss";
+// Variáveis
+@import "./varstyle.scss";
 
 // Compoents
-@import "header.scss";
+@import "./header.scss";
+@import "./nav-section.scss";
+@import "./fixbanner.scss";
 
 // Framework
-@import "bootstrap.scss";
+@import "./bootstrap.scss";
+
+// Configs
+@import "./config.scss";

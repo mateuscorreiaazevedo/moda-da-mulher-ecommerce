@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-* {
-  color: #343A40;
-}
-
-a {
-  text-decoration: none !important;
-}
-
 header {
   padding: 18px 0;
   background-color: #fcc107;
@@ -55,8 +47,84 @@ header ul li a:hover {
   color: initial;
 }
 
+.navbar-box {
+  background-color: #343A40;
+  color: #fff;
+}
+.navbar-box ul.nav li {
+  position: relative;
+  padding: 10px;
+}
+.navbar-box ul.nav li i {
+  font-size: 20px;
+}
+.navbar-box ul.nav li:hover {
+  background: #292d32;
+  cursor: default;
+}
+.navbar-box ul.nav li:hover ul.nav {
+  display: block;
+}
+.navbar-box ul.nav li ul.nav {
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  background-color: #343A40;
+  z-index: 5;
+  border-top: 10px solid #fcc107;
+  width: 100%;
+}
+.navbar-box ul.nav li ul.nav li a {
+  padding: 10px 24px 10px 10px;
+  color: #fff;
+}
+
+.fix-banners {
+  margin: 30px 0;
+}
+.fix-banners .fix-banner-12x {
+  background-color: #FF0F9A;
+  background-image: url("../images/parcele-em-12x.jpg");
+}
+.fix-banners .fix-banner-brasil {
+  background-color: #B343C3;
+  background-image: url("../images/entrega-para-todo-brasil.jpg");
+}
+.fix-banners .fix-banner-12x, .fix-banners .fix-banner-brasil {
+  border-radius: 5px;
+  background-size: cover;
+  height: 105px;
+  padding: 20px 60px;
+}
+.fix-banners .fix-banner-12x svg, .fix-banners .fix-banner-12x i, .fix-banners .fix-banner-12x p, .fix-banners .fix-banner-brasil svg, .fix-banners .fix-banner-brasil i, .fix-banners .fix-banner-brasil p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.fix-banners .fix-banner-12x i, .fix-banners .fix-banner-brasil i {
+  font-size: 65px;
+}
+.fix-banners .fix-banner-12x p, .fix-banners .fix-banner-brasil p {
+  font-weight: 100;
+  line-height: 110%;
+  font-size: 23px;
+  margin-left: 20px;
+}
+.fix-banners .fix-banner-12x p strong, .fix-banners .fix-banner-brasil p strong {
+  font-weight: bold;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: #343A40;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
