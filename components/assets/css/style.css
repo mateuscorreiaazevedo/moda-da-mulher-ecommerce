@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-.header {
+* {
+  color: #343A40;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  padding: 1.1rem 0rem;
   background-color: #fcc107;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar-box {
@@ -12,8 +25,15 @@
 }
 
 .btn-products {
+  margin-top: 2rem;
   background-color: #fcc107;
   text-transform: uppercase;
+  padding: 0.4rem 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #343A40;
 }
 
 /*# sourceMappingURL=style.css.map */

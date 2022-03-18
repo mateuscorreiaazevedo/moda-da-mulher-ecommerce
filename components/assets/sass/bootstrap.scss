@@ -1,14 +1,22 @@
-.header {
-    background-color: #fcc107;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 .navbar-box {
-    background-color: #343A40;
+    background-color: $secundary;
 }
 .nav-section {
-    color: #fff;
+    color: $white;
 }
 
 .btn-products {
-    background-color: #fcc107;
+    margin-top: 2rem;
+    background-color: $primary;
     text-transform: uppercase;
+    padding: 0.4rem 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #343A40;
+    
 }

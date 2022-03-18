@@ -1,5 +1,13 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-// font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
+
+// Configs
+@import "varstyle.scss";
+@import "config.scss";
+
+// Compoents
+@import "header.scss";
+
+// Framework
 @import "bootstrap.scss";
