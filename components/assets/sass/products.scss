@@ -1,0 +1,41 @@
+#product {
+    margin: 30px 0 60px;
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+
+    }
+    .product-items{
+        margin: 30px 0;
+        .product-item{
+            color: $white;
+            img {
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            span.headline {
+                color: $secundary;
+                font-weight: 500;
+                font-size: 19px;
+            }
+            .avaliation {
+                color: $primary;
+                font-size: 10px;
+            }
+            .price {
+                color: $secundary;
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+    }
+    .btn-products {
+        background-color: $primary;   
+        text-transform: uppercase;
+        font-weight: 600px;
+        padding: 10px 40px;
+        &:hover {
+            background: darken($color: $primary, $amount: 5);
+        }
+    }
+}

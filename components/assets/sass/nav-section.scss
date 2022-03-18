@@ -1,42 +1,44 @@
 .navbar-box {
-    background-color: $secundary;
-    color: $white;
-    ul.nav {
-        li {
-            position: relative;
-            padding: 10px;        
+  background-color: $secundary;
+  color: $white;
+  ul.nav {
+    li {
+      position: relative;
+      padding: 10px;
 
-            i {
-                font-size: 20px;
-                
-            }
+      i {
+        font-size: 20px;
+      }
 
-            &:hover {
-                background: darken($color: $secundary, $amount: 5);
-                cursor: default;
-                ul.nav {
-                    display: block;
-                    
-                }
-            }
-            
-            ul.nav {
-                display: none;
-                position: absolute;
-                top: 44px;
-                left: 0;
-                background-color: $secundary;
-                z-index: 5;
-                border-top: 10px solid $primary;
-
-                width: 100%;
-                
-
-                li a {
-                padding: 10px 24px 10px 10px;
-                    color: $white;
-                }
-            }
+      &:hover {
+        background: darken($color: $secundary, $amount: 5);
+        cursor: default;
+        ul.nav {
+          display: block;
         }
+      }
+
+      ul.nav {
+        display: none;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        background-color: $secundary;
+        z-index: 5;
+        border-top: 10px solid $primary;
+
+        width: 100%;
+
+        li {
+          padding: 0;
+          margin: 0;
+        }
+
+        li a {
+          padding: 15px 48px 15px 20px;
+          color: $white;
+        }
+      }
     }
+  }
 }
