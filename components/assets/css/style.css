@@ -8,32 +8,55 @@ a {
 }
 
 header {
-  padding: 1.1rem 0rem;
+  padding: 18px 0;
   background-color: #fcc107;
+}
+header form {
+  position: relative;
+}
+header form input[type=text] {
+  background: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 6.25rem;
+  padding-left: 1rem;
+  font-size: 14px;
+  height: 2.4rem;
+}
+header form button {
+  position: absolute;
+  right: 1.2rem;
+}
+header ul li {
+  position: relative;
+}
+header ul li span.notfications {
+  color: #fff;
+  background-color: #FF0F9A;
+  position: absolute;
+  top: -16px;
+  left: 8px;
+  border-radius: 100%;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+}
+header ul li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  color: #343A40;
+}
+header ul li a i {
+  font-size: 23px;
+  margin-right: 2px;
+}
+header ul li a:hover {
+  color: initial;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.navbar-box {
-  background-color: #343A40;
-}
-
-.nav-section {
-  color: #fff;
-}
-
-.btn-products {
-  margin-top: 2rem;
-  background-color: #fcc107;
-  text-transform: uppercase;
-  padding: 0.4rem 2rem;
-}
-
-footer {
-  margin-top: 2rem;
-  background-color: #343A40;
 }
 
 /*# sourceMappingURL=style.css.map */
