@@ -1,0 +1,23 @@
+footer {
+    background-color: $secundary;
+    padding: 20px 0;
+    color: $white;
+    a {
+        color: $white;
+        &:hover {
+            color: darken($color: $white, $amount: 5);
+        }
+    }
+    .footer-title {
+        color: $primary;
+        font-size: 20px;
+    }
+    ul {
+        li.ellipsis {
+            width: 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
