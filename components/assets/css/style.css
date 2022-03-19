@@ -201,6 +201,10 @@ header ul li a:hover {
   background-color: #23923d;
 }
 
+#coments {
+  margin: 20px 0;
+}
+
 footer {
   background-color: #343A40;
   padding: 20px 0;
