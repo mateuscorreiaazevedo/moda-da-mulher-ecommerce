@@ -3,6 +3,10 @@ header {
   padding: 18px 0;
   background-color: #fcc107;
 }
+header .logo a {
+  display: flex;
+  justify-content: center;
+}
 header form {
   position: relative;
 }
@@ -201,10 +205,6 @@ header ul li a:hover {
   background-color: #23923d;
 }
 
-#coments {
-  margin: 20px 0;
-}
-
 footer {
   background-color: #343A40;
   padding: 20px 0;
@@ -235,8 +235,16 @@ footer ul li.ellipsis {
   #slide-banners {
     display: none;
   }
+
+  .fix-banners article {
+    margin: 10px 0;
+  }
+
+  .product-item img {
+    width: 90%;
+  }
 }
-@media (min-width: 970px) {
+@media (max-width: 970px) {
   .nav-box ul {
     display: block;
   }
@@ -249,13 +257,9 @@ footer ul li.ellipsis {
     font-size: 46px;
   }
 }
-@media (max-width: 767px) {
-  .fix-banners article {
-    margin: 10px 0;
-  }
-
-  .product-item img {
-    width: 90%;
+@media (min-width: 320px) {
+  .nav-box ul {
+    display: block;
   }
 }
 .breadcrumb {

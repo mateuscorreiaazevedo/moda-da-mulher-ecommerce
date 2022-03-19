@@ -1,6 +1,10 @@
 header {
     padding: 18px 0;
     background-color: $primary;
+    .logo a {
+        display: flex;
+        justify-content: center;
+    }
     form {
         position: relative;
         input[type="text"] {
