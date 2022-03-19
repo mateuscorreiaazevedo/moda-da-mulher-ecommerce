@@ -1,14 +1,288 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-.header {
+header {
+  padding: 18px 0;
   background-color: #fcc107;
+}
+header .logo a {
+  display: flex;
+  justify-content: center;
+}
+header form {
+  position: relative;
+}
+header form input[type=text] {
+  background: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 6.25rem;
+  padding-left: 1rem;
+  font-size: 14px;
+  height: 2.4rem;
+}
+header form button {
+  position: absolute;
+  right: 1.2rem;
+}
+header ul li {
+  position: relative;
+}
+header ul li span.notfications {
+  color: #fff;
+  background-color: #FF0F9A;
+  position: absolute;
+  top: -16px;
+  left: 8px;
+  border-radius: 100%;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+}
+header ul li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  color: #343A40;
+}
+header ul li a i {
+  font-size: 23px;
+  margin-right: 2px;
+}
+header ul li a:hover {
+  color: initial;
 }
 
 .navbar-box {
   background-color: #343A40;
+  color: #fff;
+}
+.navbar-box ul.nav li {
+  position: relative;
+  padding: 10px;
+}
+.navbar-box ul.nav li i {
+  font-size: 20px;
+}
+.navbar-box ul.nav li:hover {
+  background: #292d32;
+  cursor: default;
+}
+.navbar-box ul.nav li:hover ul.nav {
+  display: block;
+}
+.navbar-box ul.nav li ul.nav {
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  background-color: #343A40;
+  z-index: 5;
+  border-top: 10px solid #fcc107;
+  width: 100%;
+}
+.navbar-box ul.nav li ul.nav li {
+  padding: 0;
+  margin: 0;
+}
+.navbar-box ul.nav li ul.nav li a {
+  padding: 15px 48px 15px 20px;
+  color: #fff;
 }
 
-.nav-section {
+.fix-banners {
+  margin: 30px 0;
+}
+.fix-banners .fix-banner-12x {
+  background-color: #FF0F9A;
+  background-image: url("../images/parcele-em-12x.jpg");
+}
+.fix-banners .fix-banner-brasil {
+  background-color: #B343C3;
+  background-image: url("../images/entrega-para-todo-brasil.jpg");
+}
+.fix-banners .fix-banner-12x, .fix-banners .fix-banner-brasil {
+  border-radius: 5px;
+  background-size: cover;
+  height: 105px;
+  padding: 20px 60px;
+}
+.fix-banners .fix-banner-12x i, .fix-banners .fix-banner-12x p, .fix-banners .fix-banner-brasil i, .fix-banners .fix-banner-brasil p {
+  margin: 0;
+  padding: 0;
   color: #fff;
+}
+.fix-banners .fix-banner-12x i, .fix-banners .fix-banner-brasil i {
+  font-size: 65px;
+  margin-left: 10px;
+}
+.fix-banners .fix-banner-12x p, .fix-banners .fix-banner-brasil p {
+  cursor: default;
+  font-weight: 100;
+  line-height: 110%;
+  font-size: 23px;
+  margin-left: 30px;
+}
+.fix-banners .fix-banner-12x p strong, .fix-banners .fix-banner-brasil p strong {
+  font-weight: bold;
+}
+
+#products {
+  margin: 30px 0 60px;
+}
+#products h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+#products .product-items {
+  margin: 30px auto;
+}
+#products .product-items .product-page {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#products .product-items .product-item {
+  color: #fff;
+}
+#products .product-items .product-item img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#products .product-items .product-item .headline, #products .product-items .product-item .price, #products .product-items .product-item h2, #products .product-items .product-item p, #products .product-items .product-item label, #products .product-items .product-item b {
+  color: #343A40;
+}
+#products .product-items .product-item .headline {
+  font-weight: 500;
+  font-size: 20px;
+}
+#products .product-items .product-item .avaliation {
+  color: #fcc107;
+  font-size: 10px;
+}
+#products .product-items .product-item .avaliation.stars {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+#products .product-items .product-item .price {
+  font-size: 20px;
+}
+#products .product-items .product-item .pricestrong {
+  font-weight: 400;
+}
+#products .product-items .product-item h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+#products .product-items .product-item p, #products .product-items .product-item h2 {
+  margin: 0;
+}
+#products .product-items .product-item h3.price {
+  font-size: 35px;
+  margin: 0;
+  font-weight: bold;
+}
+#products .product-items .product-item #qnt-product {
+  margin: 5px 0;
+  font-size: 16px;
+}
+#products .btn-products {
+  background-color: #fcc107;
+  text-transform: uppercase;
+  font-weight: 600px;
+  padding: 10px 40px;
+}
+#products .btn-products:hover {
+  background: #e7b003;
+}
+#products .btn-pay {
+  width: 100%;
+  background-color: #28A745;
+  color: #fff;
+}
+#products .btn-pay:hover {
+  background-color: #23923d;
+}
+
+footer {
+  background-color: #343A40;
+  padding: 20px 0;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #f2f2f2;
+}
+footer .footer-title {
+  color: #fcc107;
+  font-size: 20px;
+}
+footer ul li.ellipsis {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  header form {
+    margin: 20px 0;
+  }
+
+  #slide-banners {
+    display: none;
+  }
+
+  .fix-banners article {
+    margin: 10px 0;
+  }
+
+  .product-item img {
+    width: 90%;
+  }
+}
+@media (max-width: 970px) {
+  .nav-box ul {
+    display: block;
+  }
+
+  .fix-banners .fix-banner-12x p, .fix-banners .fix-banner-brasil p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .fix-banners .fix-banner-12x i, .fix-banners .fix-banner-brasil i {
+    font-size: 46px;
+  }
+}
+@media (min-width: 320px) {
+  .nav-box ul {
+    display: block;
+  }
+}
+.breadcrumb {
+  background: initial;
+  margin: 40px 10px;
+  padding: 0;
+}
+.breadcrumb a {
+  color: #FF0F9A;
+  font-weight: 500;
+}
+
+body {
+  color: #343A40;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

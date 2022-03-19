@@ -1,0 +1,58 @@
+header {
+    padding: 18px 0;
+    background-color: $primary;
+    .logo a {
+        display: flex;
+        justify-content: center;
+    }
+    form {
+        position: relative;
+        input[type="text"] {
+            background: $white;
+            border: none;
+            width: 100%;
+            border-radius: 6.25rem;
+            padding-left: 1rem;
+            font-size: 14px;
+            height: 2.4rem;
+        }
+        button {
+            position: absolute;
+            right: 1.2rem;
+        }
+    }
+    ul {
+        li {
+            position: relative;
+            span.notfications {
+                color: $white;
+                background-color: $tertiary;
+
+                position: absolute;
+                top: -16px;
+                left: 8px;
+
+                border-radius: 100%;
+                        
+                font-size: 10px;
+                width: 15px;
+                height: 15px;
+
+            }
+            a {
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: bold;
+                color: $secundary;
+                i {
+                    font-size: 23px;
+                    margin-right: 2px;
+                }
+                &:hover {
+                    color: initial;
+                }
+            }
+        }
+    }
+
+}

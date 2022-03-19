@@ -1,5 +1,24 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-// font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
-@import "bootstrap.scss";
+
+// Variáveis
+@import "./varstyle.scss";
+
+// Components
+@import "./header.scss";
+@import "./nav-section.scss";
+@import "./fixbanner.scss";
+@import "./products.scss";
+@import "./footer.scss";
+@import "./responsive.scss";
+
+
+// Framework
+@import "./bootstrap.scss";
+
+// Components Bootstrap
+@import "./bread.scss";
+
+// Configs
+@import "./config.scss";

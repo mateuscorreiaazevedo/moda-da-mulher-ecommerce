@@ -1,0 +1,40 @@
+@mixin fix-banner ($color, $url) {
+    background-color: $color;
+    background-image: url($url);
+}
+
+.fix-banners {
+    margin: 30px 0;
+    .fix-banner-12x {
+        @include fix-banner($pink, "../images/parcele-em-12x.jpg");
+
+    }
+    .fix-banner-brasil {
+        @include fix-banner($purple, "../images/entrega-para-todo-brasil.jpg");
+    }
+    .fix-banner-12x, .fix-banner-brasil {
+        border-radius: 5px;
+        background-size: cover;
+        height: 105px;
+        padding: 20px 60px;
+        i, p {
+            margin: 0;
+            padding: 0;
+            color: $white;
+        }
+        i {
+            font-size: 65px;
+            margin-left: 10px;
+        }
+        p {
+            cursor: default;
+            font-weight: 100;
+            line-height: 110%;
+            font-size: 23px;
+            margin-left: 30px;
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+}
