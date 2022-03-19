@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    header {
+        form {
+            margin: 20px 0;
+        }
+    }
+    #slide-banners {
+        display: none;
+    }
+}
+
+@media (min-width: 970px) {
+   .nav-box {
+       ul {
+           display: block;
+       }
+   } 
+   .fix-banners {
+    .fix-banner-12x, .fix-banner-brasil {
+        p {
+            font-size: 20px;
+            width: 100%;
+        }
+        i {
+            font-size: 46px;
+        }
+    }
+   }
+}
+@media (max-width: 767px) {
+    .fix-banners {
+        article {
+            margin: 10px 0;
+            
+        }
+    }
+    .product-item img {
+        width: 90%;
+    }
+}
