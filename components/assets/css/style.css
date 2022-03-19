@@ -132,6 +132,12 @@ header ul li a:hover {
 #products .product-items {
   margin: 30px auto;
 }
+#products .product-items .product-page {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+  align-items: center;
+}
 #products .product-items .product-item {
   color: #fff;
 }
@@ -139,19 +145,43 @@ header ul li a:hover {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-#products .product-items .product-item .headline {
+#products .product-items .product-item .headline, #products .product-items .product-item .price, #products .product-items .product-item h2, #products .product-items .product-item p, #products .product-items .product-item label, #products .product-items .product-item b {
   color: #343A40;
+}
+#products .product-items .product-item .headline {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 20px;
 }
 #products .product-items .product-item .avaliation {
   color: #fcc107;
   font-size: 10px;
 }
+#products .product-items .product-item .avaliation.stars {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
 #products .product-items .product-item .price {
-  color: #343A40;
-  font-weight: 400;
   font-size: 20px;
+}
+#products .product-items .product-item .pricestrong {
+  font-weight: 400;
+}
+#products .product-items .product-item h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+#products .product-items .product-item p, #products .product-items .product-item h2 {
+  margin: 0;
+}
+#products .product-items .product-item h3.price {
+  font-size: 35px;
+  margin: 0;
+  font-weight: bold;
+}
+#products .product-items .product-item #qnt-product {
+  margin: 5px 0;
+  font-size: 16px;
 }
 #products .btn-products {
   background-color: #fcc107;
@@ -161,6 +191,14 @@ header ul li a:hover {
 }
 #products .btn-products:hover {
   background: #e7b003;
+}
+#products .btn-pay {
+  width: 100%;
+  background-color: #28A745;
+  color: #fff;
+}
+#products .btn-pay:hover {
+  background-color: #23923d;
 }
 
 footer {
@@ -216,11 +254,6 @@ footer ul li.ellipsis {
     width: 90%;
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-}
-
 .breadcrumb {
   background: initial;
   margin: 40px 10px;
@@ -233,6 +266,7 @@ body {
 
 body {
   color: #343A40;
+  font-family: "Roboto", sans-serif;
 }
 
 a {

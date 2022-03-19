@@ -8,25 +8,56 @@
     }
     .product-items{
         margin: 30px auto;
+        .product-page {
+            display: flex;
+            font-display: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
         .product-item{
             color: $white;
             img {
                 border-radius: 5px;
                 margin-bottom: 10px;
             }
-            .headline {
+            .headline, .price, h2, p, label, b {
                 color: $secundary;
+            }
+            .headline {
                 font-weight: 500;
-                font-size: 19px;
+                font-size: 20px;
             }
             .avaliation {
                 color: $primary;
                 font-size: 10px;
+                &.stars {
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
             }
             .price {
-                color: $secundary;
-                font-weight: 400;
                 font-size: 20px;
+                &strong {
+                    font-weight: 400;
+                }
+            }
+            h2 {
+                font-weight: 500;
+                font-size: 35px;
+            }
+            p, h2 {
+                margin: 0;
+            }
+            h3.price {
+                font-size: 35px;
+                margin: 0;
+                font-weight: bold;
+            }
+            #qnt-product {
+                margin: 5px 0;
+                font-size: 16px;
             }
         }
     }
@@ -37,6 +68,14 @@
         padding: 10px 40px;
         &:hover {
             background: darken($color: $primary, $amount: 5);
+        }
+    }
+    .btn-pay {
+        width: 100%;
+        background-color: $green;
+        color: $white;
+        &:hover {
+            background-color: darken($color: $green, $amount: 5);
         }
     }
 }
