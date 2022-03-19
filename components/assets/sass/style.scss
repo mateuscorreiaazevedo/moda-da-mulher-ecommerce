@@ -5,7 +5,7 @@
 // Variáveis
 @import "./varstyle.scss";
 
-// Compoents
+// Components
 @import "./header.scss";
 @import "./nav-section.scss";
 @import "./fixbanner.scss";
@@ -16,6 +16,9 @@
 
 // Framework
 @import "./bootstrap.scss";
+
+// Components Bootstrap
+@import "./bread.scss";
 
 // Configs
 @import "./config.scss";

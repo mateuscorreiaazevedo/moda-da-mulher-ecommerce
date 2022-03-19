@@ -221,6 +221,16 @@ body {
   min-height: 100vh;
 }
 
+.breadcrumb {
+  background: initial;
+  margin: 40px 10px;
+  padding: 0;
+}
+.breadcrumb a {
+  color: #FF0F9A;
+  font-weight: 500;
+}
+
 body {
   color: #343A40;
 }
